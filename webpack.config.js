@@ -35,10 +35,7 @@ module.exports = {
   },
   devServer: {
     contentBase: 'public',
-    port: 3000,
-    historyApiFallback: {
-      index: 'index.html'
-    }
+    port: 3000
   },
   plugins: [
     new CopyWebpackPlugin([{
