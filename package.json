@@ -1,0 +1,44 @@
+{
+  "name": "kgtkr-github-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack -p",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgtkr/github.io.git"
+  },
+  "author": "kgtkr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kgtkr/github.io/issues"
+  },
+  "homepage": "https://github.com/kgtkr/github.io#readme",
+  "devDependencies": {
+    "@types/material-ui": "^0.18.4",
+    "@types/react": "^16.0.22",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-router-dom": "^4.2.1",
+    "awesome-typescript-loader": "^3.3.0",
+    "copy-webpack-plugin": "^4.2.0",
+    "css-loader": "^0.28.7",
+    "gh-pages": "^1.0.0",
+    "node-sass": "^4.6.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "core-js": "^2.5.1",
+    "material-ui": "^0.19.4",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
