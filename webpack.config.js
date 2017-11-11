@@ -42,7 +42,8 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([{
-      from: 'public'
+      from: 'public/index.html',
+      to: '404.html'
     }]),
   ],
 };
