@@ -2,3 +2,61 @@ body{
   margin: 0px;
   background-color: black;
 }
+
+.doc{
+  a{
+    &:link,&:visited,&:hover,&:active {
+      color: white;
+      text-decoration:underline;
+    }
+  }
+
+  h1{
+    font-size: 1.5em;
+    border-left: 6px solid #999;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 6px;
+  }
+
+  h2{
+    font-size: 1.2em;
+    border-bottom: 1px solid #999;
+    padding: 3px;
+  }
+
+  table{
+        border-collapse:collapse;
+    
+        td{
+          border: 1px solid #999;
+          padding: 6px;
+        }
+      }
+
+  dl, dt, dd {
+    box-sizing: border-box;
+    border: 1px none #ccc;
+  }
+  
+  dt, dd {
+    margin: 0;
+    border-top-style: solid;
+    padding: 10px;
+  }
+  
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: none solid solid;
+  }
+  
+  dt {
+    width: 40%;
+  }
+  
+  dd {
+    width: 60%;
+    border-left-style: solid;
+  }
+}
