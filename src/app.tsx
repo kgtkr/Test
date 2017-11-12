@@ -8,7 +8,9 @@ import {
   Home,
   Bio,
   About,
-  NotFound
+  NotFound,
+  Game,
+  Games
 } from "./pages";
 import {
   Paper,
@@ -37,6 +39,8 @@ export function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/bio" component={Bio} />
+          <Route exact path="/games" component={Games} />
+          <Route exact path="/game/:name" component={Game} />
           <Route exact path="/about" component={About} />
           <Route component={NotFound} />
         </Switch>
@@ -65,6 +69,15 @@ export function App() {
           label="Bio"
           icon={<icons.ActionFace />}
           containerElement={<Link to="/bio" />}
+        />
+
+        <BottomNavigationItem
+          style={{
+            textAlign: "center"
+          }}
+          label="Games"
+          icon={<icons.AvGames />}
+          containerElement={<Link to="/games" />}
         />
 
         <BottomNavigationItem
