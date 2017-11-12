@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { RouteComponentProps } from "react-router-dom";
-import * as ReactMarkdown from "react-markdown";
+import * as marked from "marked";
 
 export interface GameProps extends RouteComponentProps<{ name: string }> {
 
@@ -25,7 +25,7 @@ export class Game extends React.Component<GameProps, GameState> {
     fetch(`https://rawgit.com/kgtkr/${this.props.match.params.name}/master/manual.md`, {
       mode: 'cors'
     }).then(res => res.text())
-      .then(manual => this.setState({ manual }));
+      .then(manual => this.setState({ manual: marked(manual, { breaks: true, sanitize: true }) }));
 
     fetch(`https://rawgit.com/kgtkr/${this.props.match.params.name}/master/game.json`, {
       mode: 'cors'
@@ -44,7 +44,7 @@ export class Game extends React.Component<GameProps, GameState> {
         : null}
 
       {this.state.manual !== null
-        ? <ReactMarkdown source={this.state.manual} />
+        ? <div dangerouslySetInnerHTML={{ __html: this.state.manual }} />
         : null}
     </div>;
   }

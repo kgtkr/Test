@@ -32,7 +32,8 @@ export function App() {
       }} />
     <Paper style={{
       marginTop: "64px",
-      minHeight: "calc(100vh - 64px)",
+      marginBottom: "56px",
+      minHeight: "calc(100vh - 64px - 56px)",
       padding: "16px"
     }}>
       <div className="doc">
