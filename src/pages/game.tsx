@@ -36,11 +36,23 @@ export class Game extends React.Component<GameProps, GameState> {
   render() {
     return <div>
       {this.state.game !== null
-        ? <iframe src={`https://kgtkr.github.io/${this.props.match.params.name}`}
-          scrolling="no"
-          frameBorder="0"
-          width={this.state.game.width}
-          height={this.state.game.height} />
+        ? <div style={{
+          position: "relative",
+          height: "50vh",
+          paddingLeft: "75%"
+        }}>
+          <iframe
+            style={{
+              position: "absolute",
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+            }}
+            src={`https://kgtkr.github.io/${this.props.match.params.name}`}
+            scrolling="no"
+            frameBorder="0" />
+        </div>
         : null}
 
       {this.state.manual !== null
