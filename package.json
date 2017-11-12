@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kgtkr/github.io.git"
+    "url": "git+https://github.com/kgtkr/kgtkr.github.io.git"
   },
   "author": "kgtkr",
-  "license": "MIT",
+  "license": "AGPLv3",
   "bugs": {
-    "url": "https://github.com/kgtkr/github.io/issues"
+    "url": "https://github.com/kgtkr/kgtkr.github.io/issues"
   },
-  "homepage": "https://github.com/kgtkr/github.io#readme",
+  "homepage": "https://kgtkr.github.io",
   "devDependencies": {
     "@types/marked": "^0.3.0",
     "@types/material-ui": "^0.18.4",
