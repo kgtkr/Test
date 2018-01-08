@@ -72,14 +72,14 @@ export function App() {
           containerElement={<Link to="/bio" />}
         />
 
-        <BottomNavigationItem
+        {/*<BottomNavigationItem
           style={{
             textAlign: "center"
           }}
           label="Games"
           icon={<icons.AvGames />}
           containerElement={<Link to="/games" />}
-        />
+        />*/}
 
         <BottomNavigationItem
           style={{

@@ -3,8 +3,8 @@ import * as React from 'react';
 export function About() {
   return <div>
     <h1>このサイトについて</h1>
-    React/Material UI/React Router v4で作った。<br />
-    これらのライブラリの学習/実験目的のホームページ。<br />
-    そのうちMaterial UI v1.0.0に移行する。<br />
+    React v16.x/Material UI v0.x/React Router v4.xで作った。<br />
+    これらのライブラリの学習/実験目的でもある。<br />
+    そのうちMaterial UI v1.xに移行する。<br />
   </div>;
 }

@@ -27,23 +27,19 @@ export function Bio() {
         </tr>
         <tr>
           <td>好きな言語</td>
-          <td>Scala</td>
+          <td>Scala/Rust</td>
         </tr>
         <tr>
-          <td>住んでる所</td>
-          <td>福岡市</td>
+          <td>場所</td>
+          <td>福岡</td>
         </tr>
         <tr>
-          <td>生年月日</td>
+          <td>誕生日</td>
           <td>2000/11/06</td>
         </tr>
         <tr>
-          <td>使ってるOS</td>
-          <td>Ubuntu16.4</td>
-        </tr>
-        <tr>
-          <td>使ってるエディター</td>
-          <td>VSCode</td>
+          <td>開発環境</td>
+          <td>Ubuntu16.4/VSCode</td>
         </tr>
       </tbody>
     </table>
