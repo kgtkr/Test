@@ -8,5 +8,6 @@ export function Games() {
     <li><Link to="/game/track-attack">トラックアタック</Link></li>
     <li><Link to="/game/hoku-d">ほくほくちーだいなそー</Link></li>
     <li><Link to="/game/freeze-or-burn">Freeze Or Burn</Link></li>
+    <li><Link to="/game/sumo-phone">Sumo Phone</Link></li>
   </ul>;
 }
