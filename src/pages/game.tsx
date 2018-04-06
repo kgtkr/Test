@@ -8,10 +8,6 @@ export interface GameProps extends RouteComponentProps<{ name: string }> {
 
 interface GameState {
   manual: string | null,
-  game: {
-    width: string,
-    height: string
-  } | null
 }
 
 export class Game extends React.Component<GameProps, GameState> {
@@ -19,24 +15,18 @@ export class Game extends React.Component<GameProps, GameState> {
     super(props);
     this.state = {
       manual: null,
-      game: null
     };
 
     fetch(`https://rawgit.com/kgtkr/${this.props.match.params.name}/master/manual.md`, {
       mode: 'cors'
     }).then(res => res.text())
       .then(manual => this.setState({ manual: marked(manual, { breaks: true, sanitize: true }) }));
-
-    fetch(`https://rawgit.com/kgtkr/${this.props.match.params.name}/master/game.json`, {
-      mode: 'cors'
-    }).then(res => res.json())
-      .then(game => this.setState({ game }));
   }
 
   render() {
     return <div>
       <div><a href={`https://kgtkr.github.io/${this.props.match.params.name}`} target="_blank">全画面</a></div>
-      {this.state.game !== null
+      {this.state.manual !== null
         ? <div style={{
           position: "relative",
           height: "50vh",
