@@ -35,6 +35,7 @@ export class Game extends React.Component<GameProps, GameState> {
 
   render() {
     return <div>
+      <div><a href={`https://kgtkr.github.io/${this.props.match.params.name}`} target="_blank">全画面</a></div>
       {this.state.game !== null
         ? <div style={{
           position: "relative",
