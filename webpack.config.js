@@ -1,30 +1,44 @@
-var webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require("webpack");
+const OfflinePlugin = require("offline-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require("path");
 
 module.exports = {
   entry: [
     './src/main.tsx'
   ],
   output: {
-    filename: "bundle.js"
+    filename: "[name].[chunkhash].js",
+    path: __dirname + "/dist",
+    publicPath: '/'
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx', '.jsx', ".css", ".scss"]
+    extensions: [".ts", ".tsx", ".js"],
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        loader: "ts-loader"
       },
       {
-        test: /\.scss$/,
+        test: /\.html?$/,
+        loader: "html-loader"
+      },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader"
+      },
+      {
+        test: /\.s?css$/,
         use: [
           {
             loader: "style-loader"
           },
           {
-            loader: "css-loader"
+            loader: "css-loader?modules"
           },
           {
             loader: "sass-loader"
@@ -35,11 +49,27 @@ module.exports = {
   },
   devServer: {
     contentBase: 'public',
-    port: 3000
+    port: 3000,
+    host: '0.0.0.0',
+    disableHostCheck: true,
+    historyApiFallback: true
   },
   plugins: [
-    new CopyWebpackPlugin([{
-      from: 'public/index.html'
-    }]),
+    new OfflinePlugin({
+      caches: {
+        main: [":rest:"],
+      },
+      ServiceWorker: {
+        output: "sw.js",
+        publicPath: "/sw.js",
+        cacheName: "anontown",
+        minify: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: 'index.html',
+    }),
+    new CleanWebpackPlugin(['dist']),
   ],
 };
