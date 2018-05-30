@@ -22,6 +22,10 @@ export function Bio() {
           <td><a href="https://qiita.com/kgtkr">@kgtkr</a></td>
         </tr>
         <tr>
+          <td>Mastodon</td>
+          <td><a href="https://mstdn.jp/@kgtkr">@kgtkr@mstdn.jp</a></td>
+        </tr>
+        <tr>
           <td>よく使う言語</td>
           <td>TypeScript</td>
         </tr>
