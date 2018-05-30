@@ -6,7 +6,10 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    main: ['./src/main.tsx']
+    main: [
+      './src/main.tsx',
+      './src/global.scss'
+    ]
   },
   output: {
     filename: "[name].[chunkhash].js",
