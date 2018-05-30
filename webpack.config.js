@@ -5,9 +5,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require("path");
 
 module.exports = {
-  entry: [
-    './src/main.tsx'
-  ],
+  entry: {
+    main: ['./src/main.tsx']
+  },
   output: {
     filename: "[name].[chunkhash].js",
     path: __dirname + "/dist",
@@ -62,7 +62,7 @@ module.exports = {
       ServiceWorker: {
         output: "sw.js",
         publicPath: "/sw.js",
-        cacheName: "anontown",
+        cacheName: "kgtkrhp",
         minify: true,
       },
     }),
@@ -72,4 +72,10 @@ module.exports = {
     }),
     new CleanWebpackPlugin(['dist']),
   ],
+  optimization: {
+    splitChunks: {
+      name: 'vendor',
+      chunks: 'initial',
+    }
+  }
 };
