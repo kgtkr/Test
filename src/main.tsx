@@ -8,7 +8,6 @@ import {
 } from 'material-ui/styles';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import './app.scss';
 import * as OfflinePluginRuntime from "offline-plugin/runtime";
 
 OfflinePluginRuntime.install();
