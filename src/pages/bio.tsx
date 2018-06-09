@@ -26,6 +26,10 @@ export function Bio() {
           <td><a href="https://mstdn.jp/@kgtkr">@kgtkr@mstdn.jp</a></td>
         </tr>
         <tr>
+          <td>Discord</td>
+          <td>tkr#5445</td>
+        </tr>
+        <tr>
           <td>よく使う言語</td>
           <td>TypeScript</td>
         </tr>
