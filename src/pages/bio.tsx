@@ -26,8 +26,20 @@ export function Bio() {
           <td><a href="https://mstdn.jp/@kgtkr">@kgtkr@mstdn.jp</a></td>
         </tr>
         <tr>
+          <td>はてなBlog</td>
+          <td><a href="https://kgtkr.hatenablog.com/">kgtkr</a></td>
+        </tr>
+        <tr>
+          <td>Note</td>
+          <td><a href="https://note.mu/kgtkr">kgtkr</a></td>
+        </tr>
+        <tr>
           <td>Discord</td>
           <td>tkr#5445</td>
+        </tr>
+        <tr>
+          <td>Switchフレコ</td>
+          <td>SW-2592-6241-1436</td>
         </tr>
         <tr>
           <td>よく使う言語</td>
