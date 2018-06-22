@@ -34,6 +34,10 @@ export function Bio() {
           <td><a href="https://note.mu/kgtkr">kgtkr</a></td>
         </tr>
         <tr>
+          <td>AtCoder</td>
+          <td><a href="https://beta.atcoder.jp/users/kgtkr">kgtkr</a></td>
+        </tr>
+        <tr>
           <td>Discord</td>
           <td>tkr#5445</td>
         </tr>
