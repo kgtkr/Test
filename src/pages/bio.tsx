@@ -10,12 +10,28 @@ export function Bio() {
           <td><a href="https://anontown.com/">Anontown</a></td>
         </tr>
         <tr>
-          <td>Twitter</td>
+          <td>Twitter(メイン)</td>
           <td><a href="https://twitter.com/kgtkr">@kgtkr</a></td>
+        </tr>
+        <tr>
+          <td>Twitter(サブ)</td>
+          <td><a href="https://twitter.com/kgtkr_tech">@kgtkr_tech</a></td>
+        </tr>
+        <tr>
+          <td>Twitter(ゲーム)</td>
+          <td><a href="https://twitter.com/kgtkr_game">@kgtkr_game</a></td>
+        </tr>
+        <tr>
+          <td>Twitter(鍵)</td>
+          <td><a href="https://twitter.com/kgtkr_key">@kgtkr_key</a></td>
         </tr>
         <tr>
           <td>GitHub</td>
           <td><a href="https://github.com/kgtkr">@kgtkr</a></td>
+        </tr>
+        <tr>
+          <td>質問箱</td>
+          <td><a href="https://peing.net/ja/kgtkr">@kgtkr</a></td>
         </tr>
         <tr>
           <td>Qiita</td>
@@ -36,6 +52,10 @@ export function Bio() {
         <tr>
           <td>AtCoder</td>
           <td><a href="https://beta.atcoder.jp/users/kgtkr">kgtkr</a></td>
+        </tr>
+        <tr>
+          <td>YouTube</td>
+          <td><a href="https://www.youtube.com/channel/UCf3zY3rc38kvRlwEaquACKw">tkr</a></td>
         </tr>
         <tr>
           <td>Discord</td>
