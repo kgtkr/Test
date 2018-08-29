@@ -2,7 +2,7 @@ import "core-js";
 import * as ReactDOM from 'react-dom';
 import { App } from "./app";
 import * as React from 'react';
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import {
   MuiThemeProvider
 } from 'material-ui/styles';
@@ -13,10 +13,10 @@ import * as OfflinePluginRuntime from "offline-plugin/runtime";
 OfflinePluginRuntime.install();
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
       <App />
     </MuiThemeProvider>
-  </HashRouter>,
+  </BrowserRouter>,
   document.querySelector('#root')
 );
