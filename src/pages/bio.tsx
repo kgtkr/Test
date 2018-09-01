@@ -39,7 +39,7 @@ export function Bio() {
         </tr>
         <tr>
           <td>Mastodon</td>
-          <td><a href="https://mstdn.jp/@kgtkr">@kgtkr@mstdn.jp</a></td>
+          <td><a href="https://mstdn.kgtkr.net/@tech">@tech@mstdn.kgtkr.net</a></td>
         </tr>
         <tr>
           <td>はてなBlog</td>
