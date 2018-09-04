@@ -83,7 +83,7 @@ export function Bio() {
         </tr>
         <tr>
           <td>開発環境</td>
-          <td>Ubuntu16.4/VSCode</td>
+          <td>Ubuntu18.4/VSCode</td>
         </tr>
       </tbody>
     </table>
