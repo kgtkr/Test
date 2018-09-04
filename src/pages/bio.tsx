@@ -14,7 +14,7 @@ export function Bio() {
           <td><a href="https://twitter.com/kgtkr">@kgtkr</a></td>
         </tr>
         <tr>
-          <td>Twitter(サブ)</td>
+          <td>Twitter(ゴミ箱)</td>
           <td><a href="https://twitter.com/kgtkr_tech">@kgtkr_tech</a></td>
         </tr>
         <tr>
