@@ -6,7 +6,6 @@ import {
 import * as React from 'react';
 import {
   Home,
-  Bio,
   About,
   NotFound,
   Game,
@@ -39,7 +38,6 @@ export function App() {
       <div className="doc">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/bio" component={Bio} />
           <Route exact path="/games" component={Games} />
           <Route exact path="/game/:name" component={Game} />
           <Route exact path="/about" component={About} />
@@ -61,15 +59,6 @@ export function App() {
           label="HOME"
           icon={<icons.ActionHome />}
           containerElement={<Link to="/" />}
-        />
-
-        <BottomNavigationItem
-          style={{
-            textAlign: "center"
-          }}
-          label="Bio"
-          icon={<icons.ActionFace />}
-          containerElement={<Link to="/bio" />}
         />
 
         <BottomNavigationItem

@@ -2,10 +2,57 @@ import * as React from 'react';
 
 export function Home() {
   return <div>
-    <h1>WELCOME!</h1>
+    <h1>Hello world!</h1>
+    <img src="icon.png" style={{ width: "300px", borderRadius: "10px" }} />
+    <p>Web Developer</p>
+    <h2>Languages</h2>
+    <ul>
+      <li>TypeScript</li>
+      <li>Scala</li>
+      <li>Rust</li>
+      <li>other...</li>
+    </ul>
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://anontown.com/">Anontown</a></li>
+      <li><a href="https://github.com/kgtkr/typepark">Typepark</a></li>
+      <li><a href="https://github.com/kgtkr/mhxx-switch-cis">MHXX Switch CIS</a></li>
+    </ul>
+    <h2>Accounts</h2>
+    <ul>
+      <li><a href="https://github.com/kgtkr">GitHub</a></li>
+      <li><a href="https://twitter.com/kgtkr">Twitter</a></li>
+      <li><a href="https://qiita.com/kgtkr">Qiita</a></li>
+      <li><a href="https://mstdn.kgtkr.net/@tech">Mastodon</a></li>
+      <li><a href="https://beta.atcoder.jp/users/kgtkr">AtCoder</a></li>
+      <li><a href="https://kgtkr.hatenablog.com/">はてなBlog</a></li>
+    </ul>
+    <h2>Accounts2</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td>Email</td>
+          <td>kgtkr.jp@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Discord</td>
+          <td>tkr#5445</td>
+        </tr>
+        <tr>
+          <td>Switchフレコ</td>
+          <td>SW-2592-6241-1436</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Bio</h2>
     <p>
-      WEBサービスなどを作っています。
+      Web開発とかやってる福岡の高校生。<br />
+      言語触るのが好き。<a href="https://github.com/kgtkr/calc">沢山の言語で電卓実装</a>みたいな事やってたり。関数型言語楽しい。<br />
+      TypeScriptで型レベルプログラミングやったりも。<a href="https://github.com/kgtkr/typepark">Typepark</a>っていうライブラリにまとめ中。<br />
+      <a href="https://github.com/anontown">Anontown</a>はbetter2ch(現5ch)みたいなノリで始めた掲示板プロジェクト。色々迷走したけど今はReact+Node.jsで落ち着いてる。早くGraphQL導入したい。<br />
+      競プロゆるふわ。現在水色。ほぼほぼRustでやってます。Rustで何かプロジェクト作りたい。<br />
+      最近は<a href="https://github.com/kgtkr/cl8w">Haskellでwasmで動く言語実装</a>したり。いつ完成するんだこれ。<br />
+      だいがくじゅけんとんでいけー
     </p>
-    <img src="icon.png" style={{ maxWidth: "75vw" }} />
   </div>;
 }

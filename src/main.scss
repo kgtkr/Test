@@ -5,8 +5,9 @@ body{
 
 .doc{
   a{
-    &:link,&:visited,&:hover,&:active {
-      color: white;
+    text-decoration: none;
+    color: white;
+    &:hover { 
       text-decoration:underline;
     }
   }
@@ -26,37 +27,11 @@ body{
   }
 
   table{
-        border-collapse:collapse;
-    
-        td{
-          border: 1px solid #999;
-          padding: 6px;
-        }
-      }
+    border-collapse:collapse;
 
-  dl, dt, dd {
-    box-sizing: border-box;
-    border: 1px none #ccc;
-  }
-  
-  dt, dd {
-    margin: 0;
-    border-top-style: solid;
-    padding: 10px;
-  }
-  
-  dl {
-    display: flex;
-    flex-wrap: wrap;
-    border-style: none solid solid;
-  }
-  
-  dt {
-    width: 40%;
-  }
-  
-  dd {
-    width: 60%;
-    border-left-style: solid;
+    td{
+      border: 1px solid #999;
+      padding: 6px;
+    }
   }
 }
