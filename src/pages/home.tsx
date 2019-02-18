@@ -10,6 +10,7 @@ export function Home() {
       <li>TypeScript</li>
       <li>Scala</li>
       <li>Rust</li>
+      <li>Haskell</li>
       <li>other...</li>
     </ul>
     <h2>Projects</h2>
@@ -17,6 +18,7 @@ export function Home() {
       <li><a href="https://anontown.com/">Anontown</a></li>
       <li><a href="https://github.com/kgtkr/typepark">Typepark</a></li>
       <li><a href="https://github.com/kgtkr/mhxx-switch-cis">MHXX Switch CIS</a></li>
+      <li><a href="https://github.com/kgtkr/cl8w">cl8w</a></li>
     </ul>
     <h2>Accounts</h2>
     <ul>
