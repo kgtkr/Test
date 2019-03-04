@@ -53,8 +53,7 @@ export function Home() {
       TypeScriptで型レベルプログラミングやったりも。<a href="https://github.com/kgtkr/typepark">Typepark</a>っていうライブラリにまとめ中。<br />
       <a href="https://github.com/anontown">Anontown</a>はbetter2ch(現5ch)みたいなノリで始めた掲示板プロジェクト。色々迷走したけど今はReact+Node.jsで落ち着いてる。早くGraphQL導入したい。<br />
       競プロゆるふわ。現在水色。ほぼほぼRustでやってます。Rustで何かプロジェクト作りたい。<br />
-      最近は<a href="https://github.com/kgtkr/cl8w">Haskellでwasmで動く言語実装</a>した。<br />
-      だいがくじゅけんとんでいけー
+      最近は<a href="https://github.com/kgtkr/cl8w">Haskellでwasmで動く言語実装</a>した。
     </p>
   </div>;
 }
