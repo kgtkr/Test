@@ -27,7 +27,6 @@ export function Home() {
       <li><a href="https://qiita.com/kgtkr">Qiita</a></li>
       <li><a href="https://mstdn.kgtkr.net/@tech">Mastodon</a></li>
       <li><a href="https://beta.atcoder.jp/users/kgtkr">AtCoder</a></li>
-      <li><a href="https://kgtkr.hatenablog.com/">はてなBlog</a></li>
     </ul>
     <h2>Accounts2</h2>
     <table>

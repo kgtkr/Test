@@ -65,6 +65,15 @@ export function App() {
           style={{
             textAlign: "center"
           }}
+          label="Blog"
+          icon={<icons.AvLibraryBooks />}
+          containerElement={<a href="https://blog.kgtkr.net/" />}
+        />
+
+        <BottomNavigationItem
+          style={{
+            textAlign: "center"
+          }}
           label="Games"
           icon={<icons.AvGames />}
           containerElement={<Link to="/games" />}
